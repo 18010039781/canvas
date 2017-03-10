@@ -22,15 +22,16 @@
 <script>
     $(function($){
         /*
-         */
         //默认配置：
         var config = {
-            MaxObjNum:10, //圆点数量
+            MaxObjNum:40, //圆点数量
             colorList:["#FF0000","#AAD7FF","yellow","#FFD7AA"], //圆点颜色列表
             speedList:[5,6,4.5,4,5.5], //圆点颜色列表
             linkWidth:80,//圆点在0-100px之间开始连线
             radiusList:[2,3,4] //圆半径的列表
         };
+        $("#canvas").canvasAnimate(config);
+         */
         $("#canvas").canvasAnimate();
     });
 </script>
